@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="ko-KR">
+
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1.0" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title><?php bloginfo('name');?></title>
+	
+    <link rel='stylesheet' id='default-css'  href='./css/style.css' media='all' >
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" >
+	<link rel='stylesheet' type='text/css'>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8L7T9NWCY"></script>
+    <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-X8L7T9NWCY');
+    </script> -->
+	<script defer src="./js/main.js"></script>
+	<script defer src="./js/nondetail.js"></script>
+    <?php wp_head(); ?>
+</head>
+
+<body>
+	<div class="menu-layer"></div>
+	<header class="site-header">
+		<nav class="site-menu-wrap">
+			<a href='home.html'><div id="logo"></div></a>
+			<ul class="site-menu">
+				<li id="menu-works">
+					<a href="works.html">
+						<img src="./assets/img/menuWrks.svg" width="98" height="35" alt="작품들">
+					</a>
+				</li>
+					<li class="thisPage" id="menu-recipe">
+						<a href="recipe.html" aria-current="page">
+							<img src="./assets/img/menuRcp.svg" width="98" height="35" alt="전시설명">
+						</a>
+					</li>
+				<li id="menu-index">
+					<a href="index.html">
+						<img src="./assets/img/menuIndx.svg" width="98" height="35" alt="참여학생">
+					</a>
+				</li>
+				<li id="menu-guest">
+					<a href="guest.html">
+						<img src="./assets/img/menuGust.svg" width="98" height="35" alt="방명록">
+					</a>
+				</li>
+			</ul>			
+		</nav>
+	</header>
+	<!-- masterhead -->
+	<nav class='m-nav'>
+		<a href='../home.html'><div id='m-nav-logo'></div></a>
+		<div id='m-nav-btn'></div>
+		<div class='m-nav-back'>
+			<li>
+				<a href="../works.html">
+					<img src="../assets/img/menuWrks.svg" width="84" height="30" alt="작품들">
+				</a>
+			</li>
+			<a href="../works.html">
+				<div cid="cAll">
+					<img src="../assets/img/ctgrAll.svg" width="126" height="30" alt="전체" style="position:relative;left:-35px;top:9px">
+				</div>
+			</a>
+			<a href="../works_ani.html">
+				<div id="cAnim">
+					<img src="../assets/img/ctgrAnim.svg" width="126" height="30" alt="애니메이션" style="position:relative;left:-4px;top:9px">
+				</div>
+			</a>
+			<a href="../works_des.html">
+				<div id="cDesign">
+					<img src="../assets/img/ctgrDesign.svg" width="126" height="30" alt="디자인프로젝트" style="position:relative;left:14px;top:9px">
+			   
+				</div>
+			</a>
+			<a href="../works_ill.html">
+				<div id="cIll">
+					<img src="../assets/img/ctgrIllust.svg" width="126" height="30" alt="일러스트레이션" style="position:relative;left:-1px;top:9px">
+				</div>
+			</a>
+			<a href="../works_liv.html">
+				<div id="cLive">
+					<img src="../assets/img/ctgrLive.svg" width="126" height="30" alt="라이브액션" style="position:relative;left:-1px;top:9px">
+				</div>
+			</a>
+			<li class='thisPage' id="menu-recipe">
+				<a href="../recipe.html">
+					<img src="../assets/img/menuRcp.svg" width="84" height="30" alt="전시설명">
+				</a>
+			</li>
+			<li id="menu-index">
+				<a href="../index.html">
+					<img src="../assets/img/menuIndx.svg" width="84" height="30" alt="참여학생">
+				</a>
+			</li>
+			<li id="menu-guest">
+				<a href="../guest.html">
+					<img src="../assets/img/menuGust.svg" width="84" height="30" alt="방명록">
+				</a>
+			</li>
+		</div>
+	</nav>
+	<!-- mobile navi -->
+	<div class="main-footer">
+		<main class="site-main">
+			<nav class='top'></nav>	
+		</main>
+		<!-- main -->
+		
+		<footer class="site-footer">
+			<section class="footer-dept">
+				<p>kmuentd@kookmin.ac.kr</p>
+				<p>+82(0)2 910-5650</p>
+			</section>
+			<nav class = "wrapper">
+				<section class = "footer-link">
+					<p>kmuentd2021.com</p>
+					<a href = "https://www.instagram.com/kmuentd2021/" target="_blank"><p>instagram.com/kmuentd2021</p></a>
+				</section>
+				<section class = "footer-logo">
+				</section>
+				<section class = "footer-title">
+					<p>〈Confetti Spaghetti〉 KMU ENTD 2021 GRADUATION EXHIBITION.</p>
+					<p>© 2021 Kookmin Univ. Entertainment Design All Rights Reserved.</p>
+				</section>
+			</nav>
+		</footer>
+		<!-- site-footer -->
+	</div>
+</body>
+
+<script>
+	var randomV = getRandom(0,3);
+	const homeBtn = document.querySelector('#logo');
+	const mhomeBtn = document.querySelector('#m-nav-logo');
+	
+	if(randomV == 0){
+		homeBtn.classList.add('logo01');
+		mhomeBtn.classList.add('logo01');
+	}if(randomV == 1){
+		homeBtn.setAttribute('class', 'logo02'); 
+		mhomeBtn.classList.add('logo02');   
+	}if(randomV == 2){
+		homeBtn.setAttribute('class', 'logo03');
+		mhomeBtn.classList.add('logo03');
+	}
+	function getRandom(min, max){
+		min = Math.ceil(min);
+		max = Math.floor(max);
+		return Math.floor(Math.random() * (max - min)) + min; //최댓값은 제외, 최솟값은 포함
+	}
+</script>
+
+</html>

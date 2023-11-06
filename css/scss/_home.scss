@@ -1,0 +1,153 @@
+.scroll-lock{
+  overflow-y: hidden !important;
+}
+
+.site-home {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  overflow-y: hidden;
+}
+
+.logo-block {
+  pointer-events: none;
+  opacity: 0%;
+}
+
+.home-link {
+  position: fixed;
+  right: 250px; top: 130px;
+  width: 70px; height: 80px;
+  line-height: 10px;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  z-index: 300;
+
+  .divline {
+    margin-bottom: 24px;
+    margin-right: 5px;
+    border-bottom: 1.5px solid $black;
+  }
+} 
+
+.zzalAni {
+  position: absolute;
+  width: 220px; height: 360px;
+  left: 65%; top: 45%;
+
+  mask-image: url(../assets/img/homeAni.svg);
+  z-index: 100;
+}
+.zzalDes {
+  position: absolute;
+  width: 300px; height: 280px;
+  left: 35%; top: 55%;
+
+  mask-image: url(../assets/img/homeDes.svg);
+  z-index: 100;
+}
+.zzalIll {
+  position: absolute;
+  width: 300px; height: 250px;
+  left: 22%; top: 18%;
+
+  mask-image: url(../assets/img/homeIll.svg);
+  z-index: 100;
+}
+.zzalLiv {
+  position: absolute;
+  width: 350px; height: 380px;
+  left: 50%; top: 0%;
+
+  mask-image: url(../assets/img/homeLiv.svg);
+  z-index: 100;
+}
+.lineAni {
+  position: absolute;
+  width: 220px; height: 360px;
+  left: 65%; top: 45%;
+  z-index: 200;
+}
+.lineDes {
+  position: absolute;
+  width: 300px; height: 280px;
+  left: 35%; top: 55%;
+  z-index: 200;
+}
+.lineIll {
+  position: absolute;
+  width: 300px; height: 250px;
+  left: 22%; top: 18%;
+  z-index: 200;
+}
+.lineLiv {
+  position: absolute;
+  width: 350px; height: 380px;
+  left: 50%; top: 0%;
+  z-index: 200;
+}
+
+.child-plate{
+  position: absolute; overflow-x: hidden;
+  top: 50%; width: 100vw;
+  z-index: 99;
+}
+.par-plate{
+  position: absolute; overflow-x: hidden;
+  top: 50%; width: 100vw; height: 200px;
+  background-color: #ffffff00;
+  z-index: 0;
+}
+.pointer{
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 429px) and (max-width: 1280px) {
+  .site-home {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .child-plate, .par-plate{
+    overflow-x: hidden;
+  }
+  .zzalAni {z-index: 99;}
+  .zzalDes {z-index: 99;}
+  .zzalIll {z-index: 99;}
+  .zzalLiv {z-index: 99;}
+  .lineAni {z-index: 99;}
+  .lineDes {z-index: 99;}
+  .lineIll {z-index: 99;}
+  .lineLiv {z-index: 99;}
+  .home-link {
+    right: 140px; top: 32px;
+    height: 84px;
+    display: grid;
+    grid-row: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    .divline {
+      display: block !important;
+    }
+  } 
+}
+
+@media screen and (max-width: 428px) {
+  .zzalAni {width: 110px; height: 180px; z-index: 99;}
+  .zzalDes {width: 150px; height: 140px; z-index: 99;}
+  .zzalIll {width: 150px; height: 125px; z-index: 99;}
+  .zzalLiv {width: 175px; height: 190px; z-index: 99;}
+  .lineAni {width: 110px; height: 180px; z-index: 99;}
+  .lineDes {width: 150px; height: 140px; z-index: 99;}
+  .lineIll {width: 150px; height: 125px; z-index: 99;}
+  .lineLiv {width: 175px; height: 190px; z-index: 99;}
+  .home-link {
+    right: 16px; top: 32px;
+    .divline {
+      margin-bottom: 60px;
+    }
+    .divline:last-child {
+      display: none;
+    }
+  } 
+}

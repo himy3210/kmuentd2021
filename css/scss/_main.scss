@@ -1,0 +1,93 @@
+.main-footer {
+    ::selection {
+        background-color: $drag-back;
+        color: $drag-text;
+    }
+}
+
+.site-main {
+    position: relative;
+    width: calc(100vw - 370px); max-width: $mx-wid;
+    left: 370px;
+    margin: 245px 100px 300px 100px;
+    user-select: text;
+    z-index: 50;
+}
+
+.menu-layer{
+    position: absolute;
+    width: 550px; height: 800px;
+    top: 0px; left: 0px;
+    overflow-y: hidden;
+    background: no-repeat center url('../assets/img/bodyBack.png');
+    background: contain; 
+    z-index: -99;
+}
+
+.top {
+    position: fixed;
+    width: 50px; height: 50px;
+    top: 80vh; right: 100px;
+    border-radius: 25px;
+    z-index: 100;
+    cursor: pointer;
+    background: no-repeat center url('../assets/img/gotop.svg');
+    opacity: 80%;
+}
+
+@media (hover: hover) {
+    .top:hover {
+    opacity: 90%;
+    background: no-repeat center url('../assets/img/gotop_fill.svg');
+    transition-duration: 0.2s;
+    }
+}
+
+@media screen and (min-width: 429px) and (max-width: 1280px) {
+    .main-footer {overflow-x: hidden;}
+    .menu-layer {display: none;}
+    .top {
+        width: 40px; height: 40px;
+        top: 82vh; right: 36px;
+    }
+    .site-main {
+        margin: 160px auto;
+        margin-bottom: 60px;
+        left: 0;
+        width: calc(100vw - 100px);
+        max-width: $mxwidCustom; min-height: 600px;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
+    .menu-layer{
+        left: -240px;
+    }
+    .site-main {
+        width: calc(100vw - 260px);
+        left: 10vw;
+    }
+}
+
+
+@media screen and (max-width: 428px) {
+    .main-footer {overflow-x: hidden;}
+    .menu-layer {display: none;}
+
+    .top {
+        width: 40px; height: 40px;
+        top: 82vh; right: 7px;
+        // background: no-repeat center url('../assets/img/gotop.svg');
+    }
+    .site-main {
+        margin: 160px auto;
+        margin-bottom: 20px;
+        left: 0;
+        width: calc(100vw - 32px);
+        max-width: $mxwidCustom; min-height: 600px;
+    }
+}
+
+.noshow {
+    display: none;
+}

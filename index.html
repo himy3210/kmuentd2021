@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="ko-KR">
+
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1.0" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title><?php bloginfo('name');?></title>
+	
+    <link rel='stylesheet' id='default-css'  href='./css/style.css' media='all' >
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" >
+	<link rel='stylesheet' type='text/css'>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8L7T9NWCY"></script>
+    <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-X8L7T9NWCY');
+    </script> -->
+	<script defer src="./js/main.js"></script>
+	<script defer src="./js/nondetail.js"></script>
+	
+    <?php wp_head(); ?>
+</head>
+
+<body>
+	<div class="menu-layer"></div>
+	<header class="site-header">
+		<nav class="site-menu-wrap">
+			<a href='home.html'><div id="logo"></div></a>
+			<ul class="site-menu">
+				<li id="menu-works">
+					<a href="works.html">
+						<img src="./assets/img/menuWrks.svg" width="98" height="35" alt="작품들">
+					</a>
+				</li>
+					<li id="menu-recipe">
+						<a href="recipe.html">
+							<img src="./assets/img/menuRcp.svg" width="98" height="35" alt="전시설명">
+						</a>
+					</li>
+				<li class="thisPage" id="menu-index">
+					<a href="index.html" aria-current="page">
+						<img src="./assets/img/menuIndx.svg" width="98" height="35" alt="참여학생">
+					</a>
+				</li>
+				<li id="menu-guest">
+					<a href="guest.html">
+						<img src="./assets/img/menuGust.svg" width="98" height="35" alt="방명록">
+					</a>
+				</li>
+			</ul>			
+		</nav>
+	</header>
+	<!-- masterhead -->
+		
+	<nav class='m-nav'>
+		<a href='../home.html'><div id='m-nav-logo'></div></a>
+		<div id='m-nav-btn'></div>
+		<div class='m-nav-back'>
+			<li id="menu-works">
+				<a href="../works.html">
+					<img src="../assets/img/menuWrks.svg" width="84" height="30" alt="작품들">
+				</a>
+			</li>
+			<a href="../works.html">
+				<div id="cAll">
+					<img src="../assets/img/ctgrAll.svg" width="126" height="30" alt="전체" style="position:relative;left:-35px;top:9px">
+				</div>
+			</a>
+			<a href="../works_ani.html">
+				<div id="cAnim">
+					<img src="../assets/img/ctgrAnim.svg" width="126" height="30" alt="애니메이션" style="position:relative;left:-4px;top:9px">
+				</div>
+			</a>
+			<a href="../works_des.html">
+				<div id="cDesign">
+					<img src="../assets/img/ctgrDesign.svg" width="126" height="30" alt="디자인프로젝트" style="position:relative;left:14px;top:9px">
+			   
+				</div>
+			</a>
+			<a href="../works_ill.html">
+				<div id="cIll">
+					<img src="../assets/img/ctgrIllust.svg" width="126" height="30" alt="일러스트레이션" style="position:relative;left:-1px;top:9px">
+				</div>
+			</a>
+			<a href="../works_liv.html">
+				<div id="cLive">
+					<img src="../assets/img/ctgrLive.svg" width="126" height="30" alt="라이브액션" style="position:relative;left:-1px;top:9px">
+				</div>
+			</a>
+			<li id="menu-recipe">
+				<a href="../recipe.html">
+					<img src="../assets/img/menuRcp.svg" width="84" height="30" alt="전시설명">
+				</a>
+			</li>
+			<li class='thisPage' id="menu-index">
+				<a href="../index.html">
+					<img src="../assets/img/menuIndx.svg" width="84" height="30" alt="참여학생">
+				</a>
+			</li>
+			<li id="menu-guest">
+				<a href="../guest.html">
+					<img src="../assets/img/menuGust.svg" width="84" height="30" alt="방명록">
+				</a>
+			</li>
+		</div>
+	</nav>
+	<!-- mobile navi -->
+
+	<div class="main-footer">
+		<main class="site-main">
+			<div class="grid-box">
+				<a href="./detailpages/detail_01.html">	
+					<section id="01" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_01.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">강상희 <strong> Kang Sanghee</strong></h5>
+							<h6 id="index-contact">eachee916@gmail.com<br>@eachee_916</h6>
+						</section>
+						<aside class="indiv-title">
+							초상
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_02.html">
+					<section id="02" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_02.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">강주양 <strong> Kang Juyang</strong></h5>
+							<h6 id="index-contact">dddidwn@gmail.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							Shyness
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_03.html">
+					<section id="03" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_03.jpg" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">강태원 <strong> Kang Taewon</strong></h5>
+							<h6 id="index-contact">cobhartt@gmail.com<br>@cobhartt</h6> 
+						</section>
+						<aside class="indiv-title">
+							여름이었다
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_04.html">
+					<section id="04" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_04.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">고혜빈 <strong> Go Hyebin</strong></h5>
+							<h6 id="index-contact">ww1495@naver.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							복실
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_05.html">
+					<section id="05" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_05.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">김도형 <strong> Kim Dohyeong</strong></h5>
+							<h6 id="index-contact">keemdohyeong@gmail.com<br>@keemdohyeong</h6> 
+						</section>
+						<aside class="indiv-title">
+							Worship From Elsewhere
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_06.html">
+					<section id="06" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_06.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">김민기 <strong> Kim Mingi</strong></h5>
+							<h6 id="index-contact">diahmonos@gmail.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							Squarespace_click
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_07.html">
+					<section id="07" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_07.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">김준혁 <strong> Kim Junhyeok</strong></h5>
+							<h6 id="index-contact">ask1347@naver.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							BraIN
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_08.html">
+					<section id="08" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_08.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">김한빈 <strong> Kim Hanbin</strong></h5>
+							<h6 id="index-contact">himy3210@gmail.com<br>@haanbin__</h6> 
+						</section>
+						<aside class="indiv-title">
+							반지하
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_09.html">
+					<section id="09" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_09.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">김혜원 <strong> Kim Hyewon</strong></h5>
+							<h6 id="index-contact">275.noweyhmik@gmail.com<br>@275_noweyhmik</h6> 
+						</section>
+						<aside class="indiv-title">
+							Poly
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_10.html">
+					<section id="10" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_10.jpg" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">박서희 <strong> Park Seohee</strong></h5>
+							<h6 id="index-contact">mummy0601@kookmin.ac.kr<br>@new_purple_work</h6> 
+						</section>
+						<aside class="indiv-title">
+							방–글
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_11.html">
+					<section id="11" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_11.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">박숙진 <strong> Park Sookjin</strong></h5>
+							<h6 id="index-contact">art0psj@naver.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							무기력냥
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_12.html">
+					<section id="12" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_12.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">박호균 <strong> Park Hokyun</strong></h5>
+							<h6 id="index-contact">haanliang996@naver.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							壹one
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_13.html">
+					<section id="13" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_13.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">배하은 <strong> Bae Haeun</strong></h5>
+							<h6 id="index-contact">directorbhe@gmail.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							Shape of
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_14.html">
+					<section id="14" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_14.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">백주연 <strong> Baik Jooyeon</strong></h5>
+							<h6 id="index-contact">100jooooo@naver.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							두루루 의자
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_15.html">
+					<section id="15" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_15.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">손우정 <strong> Son Woojeong</strong></h5>
+							<h6 id="index-contact">vllso9802@gmail.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							Dorothy
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_16.html">
+					<section id="16" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_16.jpg" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">송다영 <strong> Song Dayoung</strong></h5>
+							<h6 id="index-contact">thdekdud97@naver.com<br>@mnzrsinheripad</h6> 
+						</section>
+						<aside class="indiv-title">
+							leftover pieces
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_17.html">
+					<section id="17" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_17.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">안종훈 <strong> Ahn Jonghoon</strong></h5>
+							<h6 id="index-contact">reusahn@gmail.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							상대적인
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_18.html">
+					<section id="18" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_18.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">안채림 <strong> An Chaerim</strong></h5>
+							<h6 id="index-contact">mireahcna@gmail.com<br>@mireahcna</h6> 
+						</section>
+						<aside class="indiv-title">
+							마무앙
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_19.html">
+					<section id="19" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_19.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">양지원 <strong> Yang Jiwon</strong></h5>
+							<h6 id="index-contact">dogg_01@naver.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							Dive
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_20.html">
+					<section id="20" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_20.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">오유경 <strong> Oh Yukyung</strong></h5>
+							<h6 id="index-contact">jeromukk@gmail.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							토끼풀찾기
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_21.html">
+					<section id="21" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_21.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">오정빈 <strong> Oh Jungbin</strong></h5>
+							<h6 id="index-contact">bung_jin@kookmin.ac.kr</h6> 
+						</section>
+						<aside class="indiv-title">
+							유유화화
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_22.html">
+					<section id="22" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_22.jpg" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">이수연 <strong> Lee Sooyeon</strong></h5>
+							<h6 id="index-contact">disconnection22@gmail.com<br>@disconnection</h6> 
+						</section>
+						<aside class="indiv-title">
+							여귀구나
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_23.html">
+					<section id="23" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_23.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">이승혁 <strong> Lee Seunghyuk</strong></h5>
+							<h6 id="index-contact">phantomye@naver.com<br>@3__jung</h6> 
+						</section>
+						<aside class="indiv-title">
+							독주
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_24.html">
+					<section id="24" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_24.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">이지선 <strong> Lee Jiseon</strong></h5>
+							<h6 id="index-contact">sincerely.izy@gmail.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							사이의 공백
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_25.html">
+					<section id="25" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_25.jpg" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">장용희 <strong> Jang Yonghee</strong></h5>
+							<h6 id="index-contact">ninano.yh@gmail.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							Aim on heart CBT : Heritagg
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_26.html">
+					<section id="26" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_26.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">전세훈 <strong> Jeon Sehoon</strong></h5>
+							<h6 id="index-contact">wjstpgns123@gmail.com<br>@22_ban</h6> 
+						</section>
+						<aside class="indiv-title">
+							덩어리
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_27.html">
+					<section id="27" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_27.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">전유리 <strong> Jeon Yuri</strong></h5>
+							<h6 id="index-contact">blumuff12@gmail.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							목적지에 도착했습니다
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_28.html">
+					<section id="28" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_28.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">주한솔 <strong> Joo Hansol</strong></h5>
+							<h6 id="index-contact">visual_hs@naver.com<br>@oojoij</h6> 
+						</section>
+						<aside class="indiv-title">
+							SPOILER(Ocean+1%)
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_29.html">
+					<section id="29" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_29.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">천예원 <strong> Cheon Yewon</strong></h5>
+							<h6 id="index-contact">astroyew@daum.net<br>@__02_wone</h6> 
+						</section>
+						<aside class="indiv-title">
+							그 해 여름
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_30.html">
+					<section id="30" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_30.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">하유빈 <strong> Ha Yubin</strong></h5>
+							<h6 id="index-contact">yubinha@kookmin.ac.kr</h6> 
+						</section>
+						<aside class="indiv-title">
+							didi&dada
+						</aside>
+					</section>
+				</a>
+				<a href="./detailpages/detail_31.html">
+					<section id="31" class="indiv-grid">
+						<section class="mask">
+							<div id="stroke"></div>
+							<img src="assets/img/profile/profile_31.png" width="136" height="136">
+						</section>
+						<section class="indiv-info">
+							<h5 id="name">황현진 <strong> Hwang Hyunjin</strong></h5>
+							<h6 id="index-contact">bamboocigar@gmail.com<br>&nbsp</h6> 
+						</section>
+						<aside class="indiv-title">
+							Downsquare
+						</aside>
+					</section>
+				</a>
+			</div>
+			
+		</main>
+		<!-- main -->
+
+		<footer class="site-footer">
+			<section class="footer-dept">
+				<p>kmuentd@kookmin.ac.kr</p>
+				<p>+82(0)2 910-5650</p>
+			</section>
+			<nav class = "wrapper">
+				<section class = "footer-link">
+					<p>kmuentd2021.com</p>
+					<a href = "https://www.instagram.com/kmuentd2021/" target="_blank"><p>instagram.com/kmuentd2021</p></a>
+				</section>
+				<section class = "footer-logo">
+				</section>
+				<section class = "footer-title">
+					<p>〈Confetti Spaghetti〉 KMU ENTD 2021 GRADUATION EXHIBITION.</p>
+					<p>© 2021 Kookmin Univ. Entertainment Design All Rights Reserved.</p>
+				</section>
+			</nav>
+		</footer>
+		<!-- site-footer -->
+	</div>
+	<nav class='top'></nav>
+</body>
+
+<script>
+	var randomV = getRandom(0,3);
+	const homeBtn = document.querySelector('#logo');
+	const mhomeBtn = document.querySelector('#m-nav-logo');
+	
+	if(randomV == 0){
+		homeBtn.classList.add('logo01');
+		mhomeBtn.classList.add('logo01');
+	}if(randomV == 1){
+		homeBtn.setAttribute('class', 'logo02'); 
+		mhomeBtn.classList.add('logo02');   
+	}if(randomV == 2){
+		homeBtn.setAttribute('class', 'logo03');
+		mhomeBtn.classList.add('logo03');
+	}
+	function getRandom(min, max){
+		min = Math.ceil(min);
+		max = Math.floor(max);
+		return Math.floor(Math.random() * (max - min)) + min; //최댓값은 제외, 최솟값은 포함
+	}
+</script>
+
+</html>

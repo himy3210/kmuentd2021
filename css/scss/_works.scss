@@ -1,0 +1,329 @@
+.cate-nav {
+    width: $mx-wid; height: 42px;
+    position: absolute; top: -126px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    user-select: none;
+
+    & > div {
+        border-top: 2px solid $black;
+        border-bottom: 2px solid $black;
+        height: inherit;
+        background: $white;
+        
+        //카테고리바 세로선 
+        // &:nth-child(n)::before {
+        //     content: "";
+        //     position: absolute; top: 0px;
+        //     height: calc(100% - 1px);
+        //     width: calc(100% + 2px);
+        //     border-left: 2px solid $black;
+        //     pointer-events: none;
+        // }
+        // &:nth-child(1)::after {
+        //     content: "";
+        //     position: absolute; top: 0px; right: 0px;
+        //     height: calc(100% - 1px);
+        //     width: calc(100% + 2px);
+        //     border-right: 2px solid $black;
+        //     pointer-events: none;
+        // }
+
+        &:nth-child(1):hover {
+            background: #F566FF;
+            transition-duration: 0.2s;
+        }
+        &:nth-child(2):hover {
+            background: #E5FF00;
+            transition-duration: 0.2s;
+        }
+        &:nth-child(3):hover {
+            background: #FF9345;
+            transition-duration: 0.2s;
+        }
+        &:nth-child(4):hover {
+            background: #70FAEF;
+            transition-duration: 0.2s;
+        }
+        &:nth-child(5):hover {
+            background: #C9FF3B;
+            transition-duration: 0.2s;
+        }
+    }
+    
+    & img {
+        padding: 5px 0px 12px 22px;
+    }
+
+    .this {
+        &-all{background: #F566FF; pointer-events: none;}
+        &-ani{background: #E5FF00; pointer-events: none;}
+        &-des{background: #FF9345; pointer-events: none;}
+        &-ill{background: #70FAEF; pointer-events: none;}
+        &-liv{background: #C9FF3B; pointer-events: none;}
+    }
+
+}
+
+
+
+.flex-box {
+    display: flex;
+    width: 100%; min-height: 500px;
+    user-select: none;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px 14px;
+
+    & > a {
+        &:nth-child(6n+1) .thumb-mask{
+            width: 320px; height: 180px;
+            position: relative;
+            img {
+                width: 320px; height: 180px;
+                position: absolute;
+                mask-image: url(../assets/img/thumbA.svg);
+                z-index:-1;
+            }
+        }
+        &:nth-child(6n+2) .thumb-mask{
+            width: 320px; height: 180px;
+            position: relative;
+            img {
+                width: 320px; height: 180px;
+                position: absolute;
+                mask-image: url(../assets/img/thumbB.svg);
+                z-index:-1;
+            }
+        }
+        &:nth-child(6n+3) .thumb-mask{
+            width: 320px; height: 180px;
+            position: relative;
+            img {
+                width: 320px; height: 180px;
+                position: absolute;
+                mask-image: url(../assets/img/thumbC.svg);
+                z-index:-1;
+            }
+        }
+        &:nth-child(6n+4) .thumb-mask{
+            width: 320px; height: 180px;
+            position: relative;
+            img {
+                width: 320px; height: 180px;
+                position: absolute;
+                mask-image: url(../assets/img/thumbD.svg);
+                z-index:-1;
+            }
+        }
+        &:nth-child(6n+5) .thumb-mask{
+            width: 320px; height: 180px;
+            position: relative;
+            img {
+                width: 320px; height: 180px;
+                position: absolute;
+                mask-image: url(../assets/img/thumbE.svg);
+                z-index:-1;
+            }
+        }
+        &:nth-child(6n) .thumb-mask{
+            width: 320px; height: 180px;
+            position: relative;
+            img {
+                width: 320px; height: 180px;
+                position: absolute;
+                mask-image: url(../assets/img/thumbF.svg);
+                z-index:-1;
+            }
+        }
+    }   
+}
+
+@media (hover: hover){ 
+    .flex-box > a {
+        &:nth-child(n):hover img {
+            opacity : 80%;
+        }
+        &:nth-child(2):hover img {
+            opacity : 80%;
+        }
+    }
+}
+
+.thumb {
+    &-grid{
+        display: grid; 
+        width: 320px; height: 270px;
+        grid-template-rows: 180px 1fr;
+        grid-template-areas: 
+            "."
+            "title";
+    }
+    &-title {
+        color: $black;
+        grid-area: title;
+        padding: 13px 0px;
+    }   
+}
+
+h3 {
+    margin: 0;
+    font-weight: normal; 
+    font-size: 19px;
+}
+
+h4 {
+    margin: 0; transform: translateY(-2px);
+    font-weight: normal;
+    font-size: 15px; 
+}
+
+@media screen and (min-width: 769px) and (max-width: 1086px) {
+    .cate-nav{display: none;}
+    
+    .flex-box {
+        gap: 1.2vw;
+        padding-bottom: 100px;
+        flex-wrap: wrap;
+        gap: 60px 14px;
+
+        & > a {
+            &:nth-child(6n+1) .thumb-mask{
+                width: 400px; height: 225px;
+                img {
+                    width: 400px; height: 225px;
+                }
+            }
+            &:nth-child(6n+2) .thumb-mask{
+                width: 400px; height: 225px;
+                img {
+                    width: 400px; height: 225px;
+                }
+            }
+            &:nth-child(6n+3) .thumb-mask{
+                width: 400px; height: 225px;
+                img {
+                    width: 400px; height: 225px;
+                }
+            }
+            &:nth-child(6n+4) .thumb-mask{
+                width: 400px; height: 225px;
+                img {
+                    width: 400px; height: 225px;
+                }
+            }
+            &:nth-child(6n+5) .thumb-mask{
+                width: 400px; height: 225px;
+                img {
+                    width: 400px; height: 225px;
+                }
+            }
+            &:nth-child(6n) .thumb-mask{
+                width: 400px; height: 225px;
+                img {
+                    width: 400px; height: 225px;
+                }
+            }
+        }   
+    }   
+    .thumb {
+        &-grid{
+            width: 100%; height: auto;
+            grid-template-rows: 1fr 90px;
+        }  
+    }
+}
+
+@media screen and (min-width: 1087px) and (max-width: 1280px) {
+    .cate-nav{display: none;}
+    
+    .flex-box {
+        gap: 1.2vw;
+        padding-bottom: 100px;
+        flex-wrap: wrap;
+    }   
+    .thumb {
+        &-grid{
+            width: 100%; height: auto;
+            grid-template-rows: 1fr 90px;
+        }  
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cate-nav{display: none;}
+
+    a {
+        width:100%;
+    }
+    
+    .flex-box {
+        gap: 40px;
+        padding-bottom: 100px;
+        &> a {
+            &:nth-child(6n+1) .thumb-mask{
+                width: 100%; height: auto;
+                padding-top: 56%; 
+                img {
+                    position: absolute; top:0;
+                    width: 100%; height: auto;
+                }
+            }
+            &:nth-child(6n+2) .thumb-mask{
+                width: 100%; height: auto;
+                padding-top: 56%; 
+                img {
+                    position: absolute; top:0;
+                    width: 100%; height: auto;
+                }
+            }
+            &:nth-child(6n+3) .thumb-mask{
+                width: 100%; height: auto;
+                padding-top: 56%;
+                img {
+                    position: absolute; top:0;
+                    width: 100%; height: auto;
+                }
+            }
+            &:nth-child(6n+4) .thumb-mask{
+                width: 100%; height: auto;
+                padding-top: 56%;
+                img {
+                    position: absolute; top:0;
+                    width: 100%; height: auto;
+                }
+            }
+            &:nth-child(6n+5) .thumb-mask{
+                width: 100%; height: auto;
+                padding-top: 56%;
+                img {
+                    position: absolute; top:0;
+                    width: 100%; height: auto;
+                }
+            }
+            &:nth-child(6n) .thumb-mask{
+                width: 100%; height: auto;
+                padding-top: 56%;
+                img {
+                    position: absolute; top:0;
+                    width: 100%; height: auto;
+                }
+            }
+        }
+    }   
+    .thumb {
+        &-grid{
+            width: inherit; height: auto;
+            grid-template-rows: 1fr 90px;
+        }  
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
+    .cate-nav {
+        width: calc(100vw - 260px);
+        max-width: $mx-wid;
+    }
+}

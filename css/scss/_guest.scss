@@ -1,0 +1,196 @@
+.site-guest {
+    @include guide(red);
+
+    display: block;
+    position: relative;
+    width: 75vw; max-width: $mx-wid;
+    left: 370px;
+    margin: 78px 100px 35px 100px;
+    user-select: text;
+    z-index: 50;
+}
+
+
+.guest-grid {
+
+    margin: 0 auto;
+    position: relative;
+    display: grid; 
+    width: 800px; height: 740px;
+    grid-template-rows: 40px 1fr 230px;
+    grid-row-gap: 12px;
+
+    .filter{
+        select {
+            position: absolute; right:0;
+            padding: 4px 0 5px 16px;
+            width:88px; height: 40px;
+            font-family: inherit;
+            font-size: 1.5rem;
+            font-size: inherit;
+            background-color: $white;
+        }
+        .dodbogi {
+            position: absolute; right: 100px;
+            padding: 8px 10px 0 0;
+
+            user-select: none;
+            font-size: 1.4rem;
+
+            img {
+                position: absolute;
+                right: -6px; bottom: -39px;
+            }
+        }
+    }
+    .board{
+        border: solid 1.5px $black;
+        overflow-y: scroll; overflow-x: hidden;
+        background: no-repeat center url(../assets/img/guestboard.jpg);
+        background-size: cover;
+        display: block;
+
+        &::-webkit-scrollbar{
+            width: 16px;
+        }
+        
+        &::-webkit-scrollbar-thumb{
+            background-color: $black;
+        }
+        
+        &::-webkit-scrollbar-track{
+            background-color: rgba(0,0,0,0);
+        }
+
+        .message {
+            width: 100%; height: auto; min-height: 180px;
+            display: flex;
+            user-select: none;
+
+            .to-grid {
+                width: 200px; height: 100%;
+                padding: 38px 0px 38px 72px;
+                margin-right: 10px;
+
+                & > h5 {
+                    display: inline;
+                    position: relative;
+                    top: -3px;
+
+                    padding-left: 4px;
+                    font-size: 1.4rem;
+                    user-select: text;
+                }
+            }
+            .from-grid{
+                width: 540px;
+                margin-right: 36px;
+                padding: 38px 0 38px 0;
+                display: grid;
+                grid-template-rows: 1fr 24px;
+
+                border-bottom: solid 1.5px $black;
+
+                & p {
+                    margin-bottom: 24px;
+                    width: inherit;
+                    line-height: 1.7;
+                    word-wrap: break-word;
+                    word-break: keep-all;
+                    user-select: text;
+                    font-size: 1.4rem;
+                }
+
+                & h5 {
+                    display: inline;
+                    padding-left: 4px;
+                    font-size:1.4rem;
+                    user-select: text;
+                    position: relative;
+                    top: -3px;
+                }
+            }
+            &:last-child > .from-grid {
+                border-bottom: none;
+            }
+        }
+    }
+    .write{
+        position: relative;
+        border: solid 1.5px $black;
+        background-color: #e5ff00;
+        padding: 38px 36px 38px 72px;
+        
+        img {
+            position: absolute;
+            left: 36px; top: 47px;
+            user-select: none;
+        }
+
+        select {
+            position: absolute; 
+            padding: 4px 0 5px 16px;
+            width:88px; height: 40px;
+            font-family: inherit;
+            font-size: inherit;
+            background-color: $white;
+        }
+        .write-grid {
+            @include guide(red);
+
+            position: absolute;
+            left: 204px;
+            width: 580px; height: 156px;
+            margin-right: 36px;
+            display: grid;
+            grid-template-rows: 1fr 24px;
+
+            .write-input{
+                width: 100%; height: 100%;
+                background: transparent;
+                padding: 0 19px 0 0; overflow-y: hidden;
+                border: none;
+
+                font-size: 1.4rem;
+                font-family: $font;
+                line-height: 1.7;
+                resize: none;
+            }
+
+            img {
+                position:relative; left:0; top: 2px;
+            }
+
+            input {
+                background: transparent; 
+                margin-left: 3px;
+                border-top: none; border-left: none; border-right: none;
+                border-bottom: solid 1.5px $black;
+                padding-bottom: 2px;
+                width: 115px;
+
+                font-size: 1.4rem;
+                color: black;
+                font-family: $font;
+
+                // &::placeholder {
+                //     color: black;
+                // }
+            }
+        }
+        .send {
+            position: absolute;
+            right: 32px; bottom: 31px;
+            width: 100px; height: 30px;
+
+            background-color: $black;
+            border: none;
+            color: $white;
+            user-select: none;
+            font-family: $font;
+            font-size: 1.4rem;
+            font-weight: normal;
+        }
+    }
+    
+}

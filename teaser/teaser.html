@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="ko-KR"> 
+
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1.0" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keyword" content="국민대, 영상디자인, 졸업전시, 2021"/>
+    <meta name="description" content="2021국민대학교 영상디자인학과 온라인 졸업전시"/>
+    <meta property="og:image" content="./assets/img/site-preview.png"/>
+    <meta property="og:description" content="2021국민대학교 영상디자인학과 온라인 졸업전시"/>
+    <meta property="og:title" content="KMU ENTD 2021 Graduation Exhibition" />
+	<title><?php bloginfo('name');?></title>
+	
+    <link rel="apple-touch-icon" sizes="180x180" href="http://kmuentd2021.com/wp-content/themes/entd2021/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://kmuentd2021.com/wp-content/themes/entd2021/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://kmuentd2021.com/wp-content/themes/entd2021/assets/images/favicon-16x16.png">
+
+    <link rel="stylesheet" href="teaser.css">
+    <style type = "text/css">
+        @charset "UTF-8";
+
+        @import url("https://use.typekit.net/xdb1kdt.css");
+        
+        *,
+        *::before, 
+        *::after {
+            box-sizing: border-box;
+            outline: none;
+            border-style: none;
+        }
+        
+        p {
+            margin: 0;
+            
+        }
+        
+        html {
+            margin: 0;
+            
+        }
+        
+        body {
+            margin: 0;
+            height: 100vh;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        
+            font-family: Realist;
+            font-weight: normal;
+            line-height: 1.35;
+            word-break: keep-all;
+            color: #f7f6f5;
+            text-align: left;
+            
+        
+            overflow: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            text-shadow: 0px 0px 10px black;
+        }
+        
+        .ontap {
+            opacity: 100% !important;
+        }
+        
+        .noshow {
+            display: none !important;
+        } 
+        
+        .title {
+            position: absolute;
+            left: 51%; top: 50%;
+            width: 30vw; height: 11vh;
+            transform: translateY(-50%);
+            background: no-repeat center url(http://kmuentd2021.com/wp-content/themes/entd2021/assets/teaser/title_t_2x.png);
+            background-size: contain;
+        }
+        
+        .time {
+            position: absolute;
+            right: 51%; top: 50%;
+            width: 30vw; height: 11vh;
+            transform: translateY(-50%);
+            background: no-repeat center url(http://kmuentd2021.com/wp-content/themes/entd2021/assets/teaser/time_t_2x.png);
+            background-size: contain;
+        }
+        
+        .open {
+            position: absolute; 
+            right: 51%; top: 50%;
+            width: 30vw; height: 11vh;
+            transform: translateY(-50%);
+            background: no-repeat center url(http://kmuentd2021.com/wp-content/themes/entd2021/assets/teaser/tap_t_2x.png);
+            background-size: contain;
+            opacity: 0;
+        }
+        
+        #d-day {
+            position: relative;
+            left: 50%; top: 50%; transform: translate(-50%, -49%);
+            padding: 0.5rem;
+            text-align: center;
+            font-size: 3vw;
+            color: #151616;
+        }
+        
+        #background {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            background: no-repeat center url(http://kmuentd2021.com/wp-content/themes/entd2021/assets/teaser/pcback_t.jpg);
+            background-size: cover;
+        }
+        
+        .footer {
+            width: 400px; height: 60px;
+            position: fixed;
+            left: 38px; top: 38px;
+        
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 60px 1fr 83px;
+                grid-template-columns: 60px 1fr 83px;
+            grid-column-gap: 18px;
+        
+            font-size: 1.2rem;
+        }
+        
+        #logo {
+            width: 60px; height: 60px;
+            transform: translateY(-9.5%);
+            background: no-repeat center url(http://kmuentd2021.com/wp-content/themes/entd2021/assets/teaser/logo_t_3x.png);
+            background-size: contain;
+        }
+        
+        #underbar {
+            color: #f7f6f5;
+            margin-bottom: 40px;
+            border-bottom: 1.5px solid #f7f6f5;
+        }
+        
+        @media (hover: hover) {
+            .open:hover {
+                background: no-repeat center url(http://kmuentd2021.com/wp-content/themes/entd2021/assets/teaser/open_t_2x.png);
+                background-size: contain;
+                opacity: 100%;
+            }
+        }
+        
+        @media (max-width: 1024px) and (min-width: 429px) {
+            
+            .title {
+                left: 50%; top: 50%;
+                width: 72vw; height: 10vh;
+                transform: translateX(-50%);
+                background: no-repeat center url(http://kmuentd2021.com/wp-content/themes/entd2021/assets/teaser/title_t_2x.png);
+                background-size: contain;
+            }
+        
+            .time {
+                position: absolute;
+                left: 50%; top: 50%;
+                width: 72vw; height: 10vh;
+                transform: translate(-50%, -100%);
+                background: no-repeat center url(http://kmuentd2021.com/wp-content/themes/entd2021/assets/teaser/time_t_2x.png);
+                background-size: contain;
+            }
+        
+            .open {
+                position: absolute; 
+                left: 50%; top: 50%;
+                width: 72vw; height: 10vh;
+                transform: translate(-50%, -100%);
+                background: no-repeat center url(http://kmuentd2021.com/wp-content/themes/entd2021/assets/teaser/tap_t_2x.png);
+                background-size: contain;
+                opacity: 0;
+            }
+            
+            #d-day {
+                font-size: 7vw;
+            }
+            
+        
+            #background {
+                background: no-repeat center url(http://kmuentd2021.com/wp-content/themes/entd2021/assets/teaser/taback_t.jpg);
+                background-size: cover;
+            }
+        
+            .footer {
+                width: 226px; height: 30px;
+                position: fixed;
+                left: 24px; top: 24px;
+        
+                display: -ms-grid;
+                display: grid;
+                -ms-grid-columns: 40px 1fr 49px;
+                    grid-template-columns: 40px 1fr 49px;
+                grid-column-gap: 12px;
+        
+                font-size: 0.7rem;
+            }
+        
+            #logo {
+                width: 40px; height: 40px;
+                transform: translateY(-15%);
+            }
+        
+            #underbar {
+                border-bottom: 1px solid #f7f6f5;
+            }
+        }
+        
+        @media (max-width: 428px) {
+        
+            .title {
+                left: 50%; top: 50%;
+                width: 86vw; height: 10vh;
+                transform: translateX(-50%);
+                background: no-repeat center url(http://kmuentd2021.com/wp-content/themes/entd2021/assets/teaser/title_t_2x.png);
+                background-size: contain;
+            }
+        
+            .time {
+                position: absolute;
+                left: 50%; top: 50%;
+                width: 86vw; height: 10vh;
+                transform: translate(-50%, -100%);
+                background: no-repeat center url(http://kmuentd2021.com/wp-content/themes/entd2021/assets/teaser/time_t_2x.png);
+                background-size: contain;
+            }
+        
+            .open {
+                position: absolute; 
+                left: 50%; top: 50%;
+                width: 86vw; height: 10vh;
+                transform: translate(-50%, -100%);
+                background: no-repeat center url(http://kmuentd2021.com/wp-content/themes/entd2021/assets/teaser/tap_t_2x.png);
+                background-size: contain;
+                opacity: 0;
+            }
+        
+            #d-day {
+                font-size: 9vw;
+            }
+        
+            .tap {
+                opacity: 100% !important;
+            }
+        
+            #background {
+                background: no-repeat center url(http://kmuentd2021.com/wp-content/themes/entd2021/assets/teaser/moback_t.jpg);
+                background-size: cover;
+            }
+        
+            .footer {
+                width: 210px; height: 20px;
+                position: fixed;
+                left: 21px; top: 24px;
+        
+                display: -ms-grid;
+                display: grid;
+                -ms-grid-columns: 30px 1fr 49px;
+                    grid-template-columns: 30px 1fr 49px;
+                grid-column-gap: 8px;
+        
+                font-size: 0.7rem;
+            }
+        
+            #logo {
+                width: 30px; height: 30px;
+                transform: translateY(-6%);
+            }
+        
+            #underbar {
+                border-bottom: 1px solid #f7f6f5;
+            }
+        }
+    </style>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8L7T9NWCY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-X8L7T9NWCY');
+    </script>
+
+    <?php wp_head(); ?>
+</head>
+
+<body>
+    <div id = "background"></div>
+    <div class = "time">
+        <div class = "" id = "d-day"></div>
+    </div>
+    <div class = "open"></div>
+    <div class = "title"></div>
+    <div class = footer>
+        <div id = "logo"></div>
+        KMU ENTD 2021<br>Graduation Exhibition
+        <a id= "underbar" href="https://www.instagram.com/kmuentd2021/" target="_blank">Instagram</a>
+    </div>
+</body>
+
+<script>
+    const countDown = function(id) {
+        var value = new Date(2021, 10, 21, 14, 0, 0);
+        var s = 1000;
+        var m = s * 60;
+        var h = m * 60;
+        var d = h * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distDt = value - now;
+            if (distDt < 0) {
+                clearInterval(timer);
+                document.getElementById(id).textContent = 'ARE';
+                return;
+            }
+            function addZero(num) {
+                if (num < 10) {
+                    num = "0" + num;
+                }
+                return num;
+            }
+            var day = Math.floor(distDt / d);
+            var hour = Math.floor((distDt % d) / h);
+            hour = addZero(hour);
+            var min = Math.floor((distDt % h) / m);
+            min = addZero(min);
+            var sec = Math.floor((distDt % m) / s);
+            sec = addZero(sec);
+            document.getElementById(id).textContent = day + 'd ' + hour + 'h ' +  min + 'm ' + sec + 's ';
+        }
+
+        timer = setInterval(showRemaining, 1000);
+    }
+    countDown('d-day');
+
+    const ddaydiv = document.querySelector('#d-day');
+    const opendiv = document.querySelector('.open');
+
+    opendiv.addEventListener('click', ()=>{
+        console.log("EVENT");
+        ddaydiv.classList.toggle('noshow');
+        opendiv.classList.toggle('ontap');
+    });
+
+</script>
+
+</html>

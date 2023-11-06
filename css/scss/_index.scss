@@ -1,0 +1,228 @@
+.grid-box{
+    display: grid;
+    width: 100%; 
+    grid-template-columns: repeat(3, 320px);
+    grid-column-gap: 43px;
+    grid-template-rows: repeat(11, 190px);
+    grid-row-gap: 60px;
+    user-select: none;
+
+    & > a {
+        transform : translateY(-5%);
+        @media (hover:hover){
+            &:nth-child(6n):hover .indiv-title{
+                color: black;
+                background-color: #F566FF;
+                transition-duration: 0.2s;
+            }
+            &:nth-child(6n+1):hover .indiv-title{
+                color: black;
+                background-color: #E5FF00;
+                transition-duration: 0.2s;
+            }
+            &:nth-child(6n+2):hover .indiv-title{
+                color: black;
+                background-color: #70FAEF;
+                transition-duration: 0.2s;
+            }
+            &:nth-child(6n+3):hover .indiv-title{
+                color: black;
+                background-color: #FF9345;
+                transition-duration: 0.2s;
+            }
+            &:nth-child(6n+4):hover .indiv-title{
+                color: black;
+                background-color: #FF7155;
+                transition-duration: 0.2s;
+            }
+            &:nth-child(6n+5):hover .indiv-title{
+                color: black;
+                background-color: #C9FF3B;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+}
+
+.indiv {
+    &-grid{
+        display: grid; width: 100%;
+        grid-template-columns: 1fr 170px;
+        grid-template-rows: 1fr 40px;
+        grid-column-gap: 16px;
+        grid-row-gap: 14px;
+        grid-template-areas: 
+            ". ."
+            "title title";
+        
+        .mask {
+            width: 136px; height: 136px;
+            position: relative;
+            #stroke {
+                position: absolute;
+                width: 100%; height:100%;
+                border-style: solid;
+                border-color: $black;
+                border-width: 1.5px;
+                border-radius: 68px;
+                opacity: 75%;
+            }
+            img {
+                position: absolute;
+                mask-image: url(../assets/img/profileCircle.svg);
+                z-index:-1;
+            }
+        }
+    }
+    &-info{
+        display: grid; height: 136px;
+        grid-template-rows: 60px 1fr;
+
+        #name {
+            margin-top: 10px;
+            border-bottom: solid;
+            border-width: 1.5px;        
+        }
+
+        #index-contact {
+            margin: auto 0;
+        }
+    }
+
+    &-title {
+        color: white;
+        grid-area: title;
+        border-style: solid;
+        border-width: 1.5px;
+        border-color: $black;
+        background-color: $black;
+        padding: 5px 14px;
+    }   
+} 
+
+
+h5 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 21px; 
+}
+
+strong {
+    margin: 0;
+    //display: inline-flex;
+    position: relative;
+    top: 2px;
+    padding-left : 8px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #979797;
+}
+
+h6 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7; 
+    transform: translateY(5%);
+}
+
+@media screen and (min-width: 786px) and (max-width: 1080px) {
+    .grid-box{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 43px;
+        grid-template-rows: repeat(16, 240px);
+        grid-row-gap: 30px;
+        & > a {
+            &:nth-child(6n) .indiv-title{color: black; background-color: #F566FF;}
+            &:nth-child(6n+1) .indiv-title{color: black; background-color: #E5FF00;}
+            &:nth-child(6n+2) .indiv-title{color: black; background-color: #70FAEF;}
+            &:nth-child(6n+3) .indiv-title{color: black; background-color: #FF9345;}
+            &:nth-child(6n+4) .indiv-title{color: black; background-color: #FF7155;}
+            &:nth-child(6n+5) .indiv-title{color: black; background-color: #C9FF3B;}
+        }
+    }
+    .indiv {
+        &-grid{
+            display: grid; width: 100%;
+            grid-template-columns: 1fr 2fr;
+            grid-row-gap: 20px;
+            grid-template-areas: 
+                ". ."
+                "title title";
+            
+            .mask {
+                width: 136px; height: 136px;
+                position: relative;
+                #stroke {
+                    opacity: 100%;
+                }
+            }
+        }
+        &-info {
+            #name {
+                margin-top: 8px;       
+            }
+            #index-contact {
+                margin: auto 0;
+            }
+        } 
+    } 
+    strong {
+        top: 1px;
+    }
+}
+
+
+@media screen and (min-width: 1081px) and (max-width: 1366px) {
+    .grid-box{
+        grid-column-gap: 1.2vw;
+        grid-row-gap: 50px;
+    }
+}
+
+@media (max-width: 785px) {
+    .grid-box{
+        grid-template-columns: 1fr;
+        grid-column-gap: 43px;
+        grid-template-rows: repeat(31, 240px);
+        grid-row-gap: 30px;
+        & > a {
+            &:nth-child(6n) .indiv-title{color: black; background-color: #F566FF;}
+            &:nth-child(6n+1) .indiv-title{color: black; background-color: #E5FF00;}
+            &:nth-child(6n+2) .indiv-title{color: black; background-color: #70FAEF;}
+            &:nth-child(6n+3) .indiv-title{color: black; background-color: #FF9345;}
+            &:nth-child(6n+4) .indiv-title{color: black; background-color: #FF7155;}
+            &:nth-child(6n+5) .indiv-title{color: black; background-color: #C9FF3B;}
+        }
+    }
+
+    .indiv {
+        &-grid{
+            display: grid; width: 100%;
+            grid-template-columns: 1fr 2fr;
+            grid-row-gap: 20px;
+            grid-template-areas: 
+                ". ."
+                "title title";
+            
+            .mask {
+                width: 136px; height: 136px;
+                position: relative;
+                #stroke {
+                    opacity: 100%;
+                }
+            }
+        }
+        &-info {
+            #name {
+                margin-top: 8px;       
+            }
+            #index-contact {
+                margin: auto 0;
+            }
+        }
+    } 
+    strong {
+        top: 1px;
+    }
+}

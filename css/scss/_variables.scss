@@ -1,0 +1,19 @@
+$bg-color: #D9D9D9;
+$txt-color: #000000;
+$white: #F7F6F5;
+$black: #151616;
+$parag-t: 1.6rem;
+$cont-mg: 20px;
+$mx-wid: 1050px;
+$left-margin: 200px;
+$font: JikjiGothic, Realist;
+$mxwidCustom: 1200px;
+
+$drag-back: #ff9c55;
+$drag-text: #000000;
+
+@mixin guide($color){
+    border-color: $color;
+    border-width: 0.5px;
+    border-style: dashed;
+}

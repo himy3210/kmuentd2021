@@ -1,0 +1,64 @@
+@media (hover:hover){
+    #menu {
+        &-works:hover a::before {
+            content:"";
+            display: inline-block;
+            margin: 5px 5px 5px 1px; 
+            width: 24px; height: 24px;
+            background-color: $black;
+            border-radius: 12px;
+        }
+        &-recipe:hover a::before {
+            content:"";
+            display: inline-block;
+            margin: 5px 5px 5px 1px; 
+            width: 24px; height: 24px;
+            background-color: $black;
+            border-radius: 12px;
+        }
+        &-index:hover a::before {
+            content:"";
+            display: inline-block;
+            margin: 5px 5px 5px 1px; 
+            width: 24px; height: 24px;
+            background-color: $black;
+            border-radius: 12px;
+        }
+        &-guest:hover a::before {
+            content:"";
+            display: inline-block;
+            margin: 5px 5px 5px 1px; 
+            width: 24px; height: 24px;
+            background-color: $black;
+            border-radius: 12px;
+        }
+    }
+}
+
+.thisPage {
+    pointer-events: none;
+
+    a::before{
+        content:"";
+        display: inline-block;
+        margin: 5px 5px 5px 1px; 
+        width: 24px; height: 24px;
+        background-color: $black;
+        border-radius: 12px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .thisPage {
+        pointer-events: none;
+
+        a::before{
+            content:"";
+            display: inline-block;
+            margin: 6px 5px 6px 1px; 
+            width: 18px; height: 18px;
+            background-color: $black;
+            border-radius: 9px;
+        }
+    }
+}

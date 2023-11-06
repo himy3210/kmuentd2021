@@ -1,0 +1,1315 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /* background-image: url(./assets/images/background.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 35vw;
+  height: 11vh;
+  cursor: pointer;
+  z-index: 99;
+  -webkit-animation: wiggle 0.5s linear 0s infinite;
+          animation: wiggle 0.5s linear 0s infinite;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/buttonBefore.png);
+  background-size: contain;
+}
+
+button:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  background: no-repeat center url(./assets/intro/buttonHover.png);
+  background-size: contain;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+  }
+  40% {
+    -webkit-transform: translate(-50%, -50%) rotate(1deg);
+            transform: translate(-50%, -50%) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translate(-50%, -50%) rotate(-1deg);
+            transform: translate(-50%, -50%) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-50%, -50%) rotate(1deg);
+            transform: translate(-50%, -50%) rotate(1deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+  }
+  40% {
+    -webkit-transform: translate(-50%, -50%) rotate(1deg);
+            transform: translate(-50%, -50%) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translate(-50%, -50%) rotate(-1deg);
+            transform: translate(-50%, -50%) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-50%, -50%) rotate(1deg);
+            transform: translate(-50%, -50%) rotate(1deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+  }
+}
+
+button:hover ~ #img01 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble1, wiggle;
+          animation-name: assemble1, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble1 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+@keyframes assemble1 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+button:hover ~ #img03 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble3, wiggle;
+          animation-name: assemble3, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble3 {
+  to {
+    left: 57%;
+    top: 67%;
+  }
+}
+
+@keyframes assemble3 {
+  to {
+    left: 57%;
+    top: 67%;
+  }
+}
+
+button:hover ~ #img04 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble4, wiggle;
+          animation-name: assemble4, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble4 {
+  to {
+    left: 40%;
+    top: 30%;
+  }
+}
+
+@keyframes assemble4 {
+  to {
+    left: 40%;
+    top: 30%;
+  }
+}
+
+button:hover ~ #img05 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble5, wiggle;
+          animation-name: assemble5, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble5 {
+  to {
+    left: 52%;
+    top: 48%;
+  }
+}
+
+@keyframes assemble5 {
+  to {
+    left: 52%;
+    top: 48%;
+  }
+}
+
+button:hover ~ #img06 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble6, wiggle;
+          animation-name: assemble6, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble6 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+@keyframes assemble6 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+button:hover ~ #img07 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble7, wiggle;
+          animation-name: assemble7, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble7 {
+  to {
+    left: 40%;
+    top: 56%;
+  }
+}
+
+@keyframes assemble7 {
+  to {
+    left: 40%;
+    top: 56%;
+  }
+}
+
+button:hover ~ #img08 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble8, wiggle;
+          animation-name: assemble8, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble8 {
+  to {
+    left: 40%;
+    top: 58%;
+  }
+}
+
+@keyframes assemble8 {
+  to {
+    left: 40%;
+    top: 58%;
+  }
+}
+
+button:hover ~ #img09 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble9, wiggle;
+          animation-name: assemble9, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble9 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+@keyframes assemble9 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+button:hover ~ #img10 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble10, wiggle;
+          animation-name: assemble10, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble10 {
+  to {
+    left: 52%;
+    top: 65%;
+  }
+}
+
+@keyframes assemble10 {
+  to {
+    left: 52%;
+    top: 65%;
+  }
+}
+
+button:hover ~ #img11 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble11, wiggle;
+          animation-name: assemble11, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble11 {
+  to {
+    left: 40%;
+    top: 37%;
+  }
+}
+
+@keyframes assemble11 {
+  to {
+    left: 40%;
+    top: 37%;
+  }
+}
+
+button:hover ~ #img12 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble12, wiggle;
+          animation-name: assemble12, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble12 {
+  to {
+    left: 45%;
+    top: 57%;
+  }
+}
+
+@keyframes assemble12 {
+  to {
+    left: 45%;
+    top: 57%;
+  }
+}
+
+button:hover ~ #img13 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble13, wiggle;
+          animation-name: assemble13, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble13 {
+  to {
+    left: 45%;
+    top: 40%;
+  }
+}
+
+@keyframes assemble13 {
+  to {
+    left: 45%;
+    top: 40%;
+  }
+}
+
+button:hover ~ #img14 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble14, wiggle;
+          animation-name: assemble14, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble14 {
+  to {
+    left: 47%;
+    top: 47%;
+  }
+}
+
+@keyframes assemble14 {
+  to {
+    left: 47%;
+    top: 47%;
+  }
+}
+
+button:hover ~ #img15 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble15, wiggle;
+          animation-name: assemble15, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble15 {
+  to {
+    left: 56%;
+    top: 45%;
+  }
+}
+
+@keyframes assemble15 {
+  to {
+    left: 56%;
+    top: 45%;
+  }
+}
+
+button:hover ~ #img16 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble16, wiggle;
+          animation-name: assemble16, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble16 {
+  to {
+    left: 44%;
+    top: 35%;
+  }
+}
+
+@keyframes assemble16 {
+  to {
+    left: 44%;
+    top: 35%;
+  }
+}
+
+button:hover ~ #img17 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble17, wiggle;
+          animation-name: assemble17, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble17 {
+  to {
+    left: 52%;
+    top: 45%;
+  }
+}
+
+@keyframes assemble17 {
+  to {
+    left: 52%;
+    top: 45%;
+  }
+}
+
+button:hover ~ #img18 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble18, wiggle;
+          animation-name: assemble18, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble18 {
+  to {
+    left: 55%;
+    top: 50%;
+  }
+}
+
+@keyframes assemble18 {
+  to {
+    left: 55%;
+    top: 50%;
+  }
+}
+
+button:hover ~ #img19 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble19, wiggle;
+          animation-name: assemble19, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble19 {
+  to {
+    left: 45%;
+    top: 60%;
+  }
+}
+
+@keyframes assemble19 {
+  to {
+    left: 45%;
+    top: 60%;
+  }
+}
+
+button:hover ~ #img20 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble20, wiggle;
+          animation-name: assemble20, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble20 {
+  to {
+    left: 52%;
+    top: 38%;
+  }
+}
+
+@keyframes assemble20 {
+  to {
+    left: 52%;
+    top: 38%;
+  }
+}
+
+button:hover ~ #img21 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble21, wiggle;
+          animation-name: assemble21, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble21 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+@keyframes assemble21 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+button:hover ~ #img22 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble22, wiggle;
+          animation-name: assemble22, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble22 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+@keyframes assemble22 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+button:hover ~ #img23 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble23, wiggle;
+          animation-name: assemble23, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble23 {
+  to {
+    left: 50%;
+    top: 33%;
+  }
+}
+
+@keyframes assemble23 {
+  to {
+    left: 50%;
+    top: 33%;
+  }
+}
+
+button:hover ~ #img24 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble24, wiggle;
+          animation-name: assemble24, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble24 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+@keyframes assemble24 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+button:hover ~ #img25 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble25, wiggle;
+          animation-name: assemble25, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble25 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+@keyframes assemble25 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+button:hover ~ #img26 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble26, wiggle;
+          animation-name: assemble26, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble26 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+@keyframes assemble26 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+button:hover ~ #img27 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble27, wiggle;
+          animation-name: assemble27, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble27 {
+  to {
+    left: 40%;
+    top: 46%;
+  }
+}
+
+@keyframes assemble27 {
+  to {
+    left: 40%;
+    top: 46%;
+  }
+}
+
+button:hover ~ #img28 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble28, wiggle;
+          animation-name: assemble28, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble28 {
+  to {
+    left: 55%;
+    top: 55%;
+  }
+}
+
+@keyframes assemble28 {
+  to {
+    left: 55%;
+    top: 55%;
+  }
+}
+
+button:hover ~ #img29 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble29, wiggle;
+          animation-name: assemble29, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble29 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+@keyframes assemble29 {
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+button:hover ~ #img30 {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: assemble30, wiggle;
+          animation-name: assemble30, wiggle;
+  -webkit-animation-delay: 0s, 0.2s;
+          animation-delay: 0s, 0.2s;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.2s, 0.5s;
+          animation-duration: 0.2s, 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+          animation-timing-function: cubic-bezier(0.13, 0.63, 0.57, 0.93), linear;
+}
+
+@-webkit-keyframes assemble30 {
+  to {
+    left: 37%;
+    top: 40%;
+  }
+}
+
+@keyframes assemble30 {
+  to {
+    left: 37%;
+    top: 40%;
+  }
+}
+
+.ingredient {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.ingredient #background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: no-repeat center url(./assets/intro/background.png);
+  background-size: cover;
+}
+
+.ingredient #guide {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: no-repeat center url(./assets/intro/sampleguide.png);
+  background-size: cover;
+  opacity: 50%;
+}
+
+.ingredient #img01 {
+  position: absolute;
+  left: 64%;
+  top: 34.5%;
+  width: 6vw;
+  height: 11.5vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/player01.png);
+  background-size: contain;
+}
+
+.ingredient #img03 {
+  position: absolute;
+  left: 87%;
+  top: 92.6%;
+  width: 5vw;
+  height: 8vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/tr01.png);
+  background-size: contain;
+}
+
+.ingredient #img04 {
+  position: absolute;
+  left: 3.6%;
+  top: 53%;
+  width: 6vw;
+  height: 7vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/tr02.png);
+  background-size: contain;
+}
+
+.ingredient #img05 {
+  position: absolute;
+  left: 12.5%;
+  top: 17.5%;
+  width: 20vw;
+  height: 25vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/box01.png);
+  background-size: contain;
+}
+
+.ingredient #img06 {
+  position: absolute;
+  left: 33%;
+  top: 31.5%;
+  width: 7vw;
+  height: 9vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/box02.png);
+  background-size: contain;
+}
+
+.ingredient #img07 {
+  position: absolute;
+  left: 67%;
+  top: 16%;
+  width: 15vw;
+  height: 14vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/typebit02.png);
+  background-size: contain;
+}
+
+.ingredient #img08 {
+  position: absolute;
+  left: 60%;
+  top: 74%;
+  width: 17vw;
+  height: 22vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/letA01.png);
+  background-size: contain;
+}
+
+.ingredient #img09 {
+  position: absolute;
+  left: 82.7%;
+  top: 66.5%;
+  width: 31vw;
+  height: 37vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/typebit01.png);
+  background-size: contain;
+}
+
+.ingredient #img10 {
+  position: absolute;
+  left: 78.8%;
+  top: 79%;
+  width: 20vw;
+  height: 45vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/bluesolo.png);
+  background-size: contain;
+}
+
+.ingredient #img11 {
+  position: absolute;
+  left: 91%;
+  top: 76%;
+  width: 16vw;
+  height: 23vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/chair.png);
+  background-size: contain;
+}
+
+.ingredient #img12 {
+  position: absolute;
+  left: 78.2%;
+  top: 7%;
+  width: 32vw;
+  height: 45vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/crayon.png);
+  background-size: contain;
+}
+
+.ingredient #img13 {
+  position: absolute;
+  left: 23%;
+  top: 56.5%;
+  width: 40vw;
+  height: 36vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/letA02.png);
+  background-size: contain;
+}
+
+.ingredient #img14 {
+  position: absolute;
+  left: 10.7%;
+  top: 74%;
+  width: 12vw;
+  height: 36vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/paperpiece.png);
+  background-size: contain;
+}
+
+.ingredient #img15 {
+  position: absolute;
+  left: 38.5%;
+  top: 82%;
+  width: 9vw;
+  height: 14vh;
+  -webkit-transform: translate(-50%, -50%) scaleX(-1);
+          transform: translate(-50%, -50%) scaleX(-1);
+  background: no-repeat center url(./assets/intro/playerTeam.png);
+  background-size: contain;
+}
+
+.ingredient #img16 {
+  position: absolute;
+  left: 11%;
+  top: 45.5%;
+  width: 6vw;
+  height: 8vh;
+  -webkit-transform: translate(-50%, -50%) rotate(10deg);
+          transform: translate(-50%, -50%) rotate(10deg);
+  background: no-repeat center url(./assets/intro/punH.png);
+  background-size: contain;
+}
+
+.ingredient #img17 {
+  position: absolute;
+  left: 17.5%;
+  top: 68%;
+  width: 7vw;
+  height: 11vh;
+  -webkit-transform: translate(-50%, -50%) rotate(15deg);
+          transform: translate(-50%, -50%) rotate(15deg);
+  background: no-repeat center url(./assets/intro/punP.png);
+  background-size: contain;
+}
+
+.ingredient #img18 {
+  position: absolute;
+  left: 80.5%;
+  top: 27%;
+  width: 31vw;
+  height: 49vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/spring.png);
+  background-size: contain;
+}
+
+.ingredient #img19 {
+  position: absolute;
+  left: 22.5%;
+  top: 40.5%;
+  width: 25vw;
+  height: 35vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/tursil.png);
+  background-size: contain;
+}
+
+.ingredient #img20 {
+  position: absolute;
+  left: 38.5%;
+  top: 29%;
+  width: 18vw;
+  height: 34vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/blue01.png);
+  background-size: contain;
+}
+
+.ingredient #img21 {
+  position: absolute;
+  left: 34%;
+  top: 35%;
+  width: 4vw;
+  height: 12vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/blue02.png);
+  background-size: contain;
+}
+
+.ingredient #img22 {
+  position: absolute;
+  left: 37%;
+  top: 16%;
+  width: 5vw;
+  height: 13vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/blue03.png);
+  background-size: contain;
+}
+
+.ingredient #img23 {
+  position: absolute;
+  left: 90%;
+  top: 52.6%;
+  width: 15vw;
+  height: 28vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/hair.png);
+  background-size: contain;
+}
+
+.ingredient #img24 {
+  position: absolute;
+  left: 65.5%;
+  top: 79.5%;
+  width: 50vw;
+  height: 42vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/jinx.png);
+  background-size: contain;
+}
+
+.ingredient #img25 {
+  position: absolute;
+  left: 62.5%;
+  top: 17%;
+  width: 30vw;
+  height: 40vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/para.png);
+  background-size: contain;
+}
+
+.ingredient #img26 {
+  position: absolute;
+  left: 23.5%;
+  top: 88%;
+  width: 35vw;
+  height: 38vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/pink.png);
+  background-size: contain;
+}
+
+.ingredient #img27 {
+  position: absolute;
+  left: 78.8%;
+  top: 74.5%;
+  width: 35vw;
+  height: 46vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/sphere01.png);
+  background-size: contain;
+}
+
+.ingredient #img28 {
+  position: absolute;
+  left: 96.5%;
+  top: 36%;
+  width: 25vw;
+  height: 35vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/sphere02.png);
+  background-size: contain;
+}
+
+.ingredient #img29 {
+  position: absolute;
+  left: 58%;
+  top: 91%;
+  width: 12vw;
+  height: 21vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/toon.png);
+  background-size: contain;
+}
+
+.ingredient #img30 {
+  position: absolute;
+  left: 45%;
+  top: 12%;
+  width: 8vw;
+  height: 7vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: no-repeat center url(./assets/intro/tr03.png);
+  background-size: contain;
+}
+/*# sourceMappingURL=introstyle.css.map */
